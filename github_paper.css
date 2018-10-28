@@ -1,0 +1,409 @@
+:root {
+    --side-bar-bg-color: #CCCCCE;
+    --side-bar-text-color: #666668;
+    --control-bg-color: #EEEEEE;
+    --control-text-color: #48484C;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: -apple-system, "SF UI Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Lantinghei SC", "Source Han Sans", "Noto Sans CJK", sans-serif, Arial;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+    background-color: #EEE;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 10px auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+    background-color: #FFF;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .1), 0 0 3px rgba(0, 0, 0, .1),0 0 6px rgba(0, 0, 0, .2), 0 0 12px rgba(0, 0, 0, .2)
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+    color: rgba(233, 237, 237, 1);
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 4px 2px 4px;
+}
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+  background-color: #263238;
+  margin: 15px -30px;
+  padding: 16px 30px;
+}
+.md-fences.md-fences-with-lineno {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+/* 小老鼠自己加的 Start */
+p>.md-image:only-child {
+  display: block;
+  width: calc(100% + 60px);
+  position: relative;
+  margin: 0 -30px;
+}
+p>.md-image:only-child img {
+  border: none;
+}
+#write>p:first-child>.md-image:only-child {
+  margin-top: calc(-30px - .8em);
+}
+/* 小老鼠自己加的 End */
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+/*
+
+    Name:       material
+    Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+
+    Original material color scheme by Mattia Astorino (https://github.com/equinusocio/material-theme)
+
+*/
+
+.CodeMirror {
+  background-color: #263238;
+  color: rgba(233, 237, 237, 1);
+}
+.CodeMirror .CodeMirror-gutters {
+  background: #263238;
+  color: rgb(83,127,126);
+  border: none;
+}
+.CodeMirror .CodeMirror-guttermarker, .CodeMirror .CodeMirror-guttermarker-subtle, .CodeMirror .CodeMirror-linenumber { color: rgb(83,127,126); }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+.CodeMirror div.CodeMirror-selected { background: rgba(255, 255, 255, 0.15); }
+.cm-s-material.CodeMirror-focused div.CodeMirror-selected { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
+
+.CodeMirror .CodeMirror-activeline-background { background: rgba(0, 0, 0, 0); }
+.CodeMirror .cm-keyword { color: rgba(199, 146, 234, 1); }
+.CodeMirror .cm-operator { color: rgba(233, 237, 237, 1); }
+.CodeMirror .cm-variable-2 { color: #80CBC4; }
+.CodeMirror .cm-variable-3, .CodeMirror .cm-type { color: #82B1FF; }
+.CodeMirror .cm-builtin { color: #DECB6B; }
+.CodeMirror .cm-atom { color: #F77669; }
+.CodeMirror .cm-number { color: #F77669; }
+.CodeMirror .cm-def { color: rgba(233, 237, 237, 1); }
+.CodeMirror .cm-string { color: #C3E88D; }
+.CodeMirror .cm-string-2 { color: #80CBC4; }
+.CodeMirror .cm-comment { color: #546E7A; }
+.CodeMirror .cm-variable { color: #82B1FF; }
+.CodeMirror .cm-tag { color: #80CBC4; }
+.CodeMirror .cm-meta { color: #80CBC4; }
+.CodeMirror .cm-attribute { color: #FFCB6B; }
+.CodeMirror .cm-property { color: #80CBAE; }
+.CodeMirror .cm-qualifier { color: #DECB6B; }
+.CodeMirror .cm-variable-3, .CodeMirror .cm-type { color: #DECB6B; }
+.CodeMirror .cm-tag { color: rgba(255, 83, 112, 1); }
+.CodeMirror .cm-error {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: #EC5F67;
+}
+.CodeMirror .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
